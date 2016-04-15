@@ -9,6 +9,7 @@ Notifications can be email, sms, or both.
 
 ## Mailingslists:
 - https://groups.google.com/forum/#!forum/rubyonrails-security
+- https://groups.google.com/forum/#!aboutgroup/rubyonrails-security
 
 ## Name
 
