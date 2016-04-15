@@ -7,6 +7,9 @@ Checks mailing lists or rss feeds for security vulnerability announcments and se
 
 Notifications can be email, sms, or both. 
 
+## Mailingslists:
+- https://groups.google.com/forum/#!forum/rubyonrails-security
+
 ## Name
 
 Waxwing is a high-pitched bird.
