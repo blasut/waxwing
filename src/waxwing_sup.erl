@@ -28,7 +28,10 @@ start_link() ->
 
 %% Child :: {Id,StartFunc,Restart,Shutdown,Type,Modules}
 init([]) ->
-    {ok, { {one_for_all, 0, 1}, []} }.
+  RestartStrategy = {simple_one_for_one, 10, 60},
+  Children = [{waxwing_watcher, {waxwing_watcher, start_link, []},
+              permanent, brutal_kill, worker, [waxwing_watcher]}],
+  {ok, {RestartStrategy, Children}}.
 
 %%====================================================================
 %% Internal functions
